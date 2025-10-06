@@ -174,7 +174,6 @@
   }
 }
 
-/* === Кнопки === */
 .button {
   position: relative;
   display: inline-flex;
@@ -192,7 +191,6 @@
   transition: all 0.3s ease;
 }
 
-/* Без тени в обычном состоянии */
 .button:focus {
   outline: none;
   box-shadow: none;
@@ -234,7 +232,6 @@
   transform: translateX(0);
 }
 
-/* === Кнопки в карточке === */
 .card__actions {
   display: grid;
   grid-template-columns: min-content min-content;
@@ -247,7 +244,6 @@
   gap: 5px;
 }
 
-/* Кнопка лайка */
 .card__icon-button {
   background: transparent;
   border: none;
@@ -270,7 +266,6 @@
   transition-duration: 0.3s;
 }
 
-/* Кнопка "лайк" */
 .card__like-button {
   background: var(--bg-color);
   padding: 0 1rem;
@@ -288,7 +283,6 @@
   overflow: hidden;
 }
 
-/* === Кнопка "Сохранить" === */
 .save {
   display: flex;
   justify-content: center;
@@ -317,7 +311,6 @@
   height: 21px;
 }
 
-/* === Модальное окно === */
 .modal {
   border: 2px solid var(--accent-color);
   padding: 30px;
@@ -377,7 +370,7 @@
 
 .modal__button:focus {
   outline: none;
-  box-shadow: none; /* убрана тень */
+  box-shadow: none; 
 }
 
 .modal__button:focus-visible {
@@ -385,7 +378,7 @@
   outline-offset: 3px;
 }
 
-/* === Фильтры === */
+/*  Фильтры  */
 .filter-sepia { filter: contrast(1.1) brightness(0.9) sepia(80%); }
 .filter-grayscale { filter: contrast(1.1) brightness(0.9) grayscale(100%); }
 .filter-invert { filter: contrast(1.1) brightness(0.9) invert(100%); }
@@ -394,7 +387,7 @@
 .filter-blur { filter: contrast(1.1) brightness(0.9) blur(1px); }
 .filter-hue { filter: contrast(1.1) brightness(0.9) hue-rotate(90deg); }
 
-/* === Мобильная версия === */
+/*  Мобильная версия  */
 @media (width <= 375px) {
   .header {
     block-size: auto;
@@ -493,13 +486,6 @@
     max-inline-size: none;
     inline-size: 100%;
     margin: 0;
-  }
-
-  .modal__button {
-    inline-size: 100%;
-    max-inline-size: 261px; 
-    block-size: 38px;
-    margin: 0 auto;
   }
 
   .modal__icon {
