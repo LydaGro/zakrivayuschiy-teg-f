@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Закрывающий тег</title>
+    <!-- Фавиконки -->
+     <!-- Фавиконки для разных устройств -->
+     <link rel="icon" type="image/svg+xml" href="./images/favicon.svg?v=1">
+     <link rel="alternate icon" href="./images/favicon.svg?v=1" type="image/svg+xml">
+
+     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.svg"> 
+    
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/variables.css">
   <link rel="stylesheet" href="./styles/globals.css">
@@ -15,10 +22,8 @@
   <div class="main-container">
     <header class="header">
       <div class="header__content">
-        <h1 class="header__title">
           <span class="header__title-main">&lt;/HTML&gt;</span>
-          <span class="header__title-sub">закрывающий тег</span>
-        </h1>
+          <h1 class="header__title-sub">закрывающий тег</h1>
       </div>
    </header>
     <main class="content">
@@ -314,12 +319,11 @@
         <use href="./svg/icons.svg#floppy"></use>
       </svg>
       <div class="modal__text">
-        <span class="modal__text-line">Вставьте</span>
-        <span class="modal__text-line">дискету, чтобы продолжить</span>
+        <p>Вставьте дискету, чтобы продолжить</p>
       </div>
     </div>
     <form method="dialog">
-      <button class="modal__button button">
+      <button class="modal__button button" type="submit">
         <span class="button__text">ок</span>
       </button>
     </form>

@@ -25,12 +25,12 @@
     --button-width: 130px;
     --button-height: 38px;
     --cards-gap: 50px;
-    --card-min-height: 956px;
+
     
     /* ⚡ РЕЗИНОВЫЕ РАЗМЕРЫ */
     --content-width: clamp(23.6875rem, 16.5352rem + 30.5164vw, 44rem);
     --card-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
-    --header-height: clamp(3.75rem, 14.6041rem + 13.9932vw, 23rem);
+    --header-height: clamp(3.75rem + 0.1875rem, 14.6041rem + 13.9932vw + 0.1875rem, 23rem + 0.1875rem);
     
     /* ⚡ ТОЧНЫЕ ШРИФТЫ */
     --title-main-size: clamp(2.5rem, 1.5rem + 4.27vw, 4.063rem);
